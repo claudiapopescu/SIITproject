@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyProject">
+  <DataContextMoniker Name="/MyProjectDataContext" />
+  <nestedChildShapes>
+    <classShape Id="92258b13-fb39-40f9-b7ce-251ebe188d20" absoluteBounds="4.375, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MyProjectDataContext/Blood" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5eefd464-6a31-401e-86a5-6014dcb996c8" absoluteBounds="4.39, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29ed0c24-ed7e-442f-9e80-8d04342a8875" absoluteBounds="0.5, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MyProjectDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="620c3215-06ab-4e46-b21f-0a8372f53cab" absoluteBounds="0.51500000000000012, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe431d21-b24a-4677-853e-e4d9c4915a5a" absoluteBounds="4.375, 3.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/MyProjectDataContext/Medicine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f948f757-3ab9-46e5-b2c5-c07dc74d1ac6" absoluteBounds="4.3900000000000006, 3.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.91429768880208); (4.375 : 3.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyProjectDataContext/Doctor/Doctor_Medicine" />
+      <nodes>
+        <classShapeMoniker Id="29ed0c24-ed7e-442f-9e80-8d04342a8875" />
+        <classShapeMoniker Id="fe431d21-b24a-4677-853e-e4d9c4915a5a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b7bb32a6-4b74-4009-aa7c-ad75b8134285" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/MyProjectDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c78df87-dc8e-4d6a-90a0-243cdda693d7" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
