@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Myproject.Models.BloodModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdBlood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RhType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BloodLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stock)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkToTests)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdBlood)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RhType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BloodLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stock)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkToTests)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdBlood }) |
+            @Html.ActionLink("Details", "Details", new {  id = item.IdBlood }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdBlood })
+        </td>
+    </tr>
+}
+
+</table>
